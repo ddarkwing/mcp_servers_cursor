@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "opencode": {
+      "command": "/home/you/.config/opencode/mcp-bridge/run.sh",
+      "args": [],
+      "env": {
+        "OPENCODE_FORCE_MODEL": "opencode/deepseek-v4.1-flash-free",
+        "OPENCODE_FALLBACK_MODEL": "deepseek/deepseek-flash"
+      }
+    }
+  }
+}

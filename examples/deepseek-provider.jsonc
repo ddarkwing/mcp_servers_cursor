@@ -1,0 +1,22 @@
+// Add this provider to ~/.config/opencode/opencode.json under "providers".
+// Put your DeepSeek API key into ~/.config/opencode/deepseek.key (chmod 600).
+// Then run: opencode reload
+{
+  "deepseek": {
+    "name": "DeepSeek",
+    "package": "aisdk:@ai-sdk/openai-compatible",
+    "settings": {
+      "baseURL": "https://api.deepseek.com",
+      "apiKey": "{file:~/.config/opencode/deepseek.key}"
+    },
+    "models": {
+      "deepseek-flash": {
+        "name": "DeepSeek V4.1 Flash",
+        "limit": {
+          "context": 1048576,
+          "output": 393216
+        }
+      }
+    }
+  }
+}
